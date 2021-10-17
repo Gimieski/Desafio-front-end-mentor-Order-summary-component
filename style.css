@@ -5,6 +5,8 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
     background-image: url("./images/pattern-background-desktop.svg");
     color: hsl(225, 100%, 94%);
     background-position:top right;
@@ -13,6 +15,7 @@ body{
     background-size:100%;
     background-attachment: fixed;
     padding: 50px;
+    margin:0px;
 }
 
 h1{
@@ -25,7 +28,6 @@ h1{
     width: 400px;
     background-color: #fff;
     border-radius: 15px;
-    margin: auto;
 }
 
 .card-body{
@@ -80,10 +82,11 @@ span:first-child{
 @media (max-width:500px){
     body{
         background-image: url("./images/pattern-background-mobile.svg");
-        padding: 30px 50px;
     }
    .card{
-    transform: scale(0.8);
-    margin: auto;
+    transform: scale(0.9);
+   }
+    .price{
+       margin-left: 5px;
    }
 }
